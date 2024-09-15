@@ -1,0 +1,29 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+#train: D:\object_detection\landslide_datasets\coco2yolo_split\train\images # 10243 images
+#val: D:\object_detection\landslide_datasets\coco2yolo_split\test\images  # 728 images
+#path: ../datasets/DOTA1_split  # dataset root dir
+#train: /home/RM_luo/Documents/datasets/DOTA1_split/train/images # train images (relative to 'path') 10243 images
+#val: /home/RM_luo/Documents/datasets/DOTA1_split/val/images  # val images (relative to 'path') 728 images
+#test: val/images # test images (optional)
+
+#path: ../datasets/20231119_DOTA_5  # dataset root dir
+train: /root/autodl-tmp/datasets/20231119_DOTA_5/train/images # train images (relative to 'path') 10243 images
+val: /root/autodl-tmp/datasets/20231119_DOTA_5/val/all_images  # val images (relative to 'path') 728 images
+# Classes
+#nc: 15 # number of classes
+
+#names: ['small-vehicle', 'large-vehicle', 'plane', 'storage-tank', 'ship', 'harbor',
+#        'ground-track-field', 'soccer-ball-field', 'tennis-court', 'swimming-pool',
+#        'baseball-diamond', 'roundabout', 'basketball-court', 'bridge', 'helicopter']
+nc: 5 # number of classes
+names: ['small-vehicle', 'large-vehicle', 'plane', 'ship', 'storage-tank']
